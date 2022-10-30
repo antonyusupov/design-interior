@@ -1,0 +1,46 @@
+.id__design-blogs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.id__design-blogs_top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 1rem 3rem;
+}
+
+.id__design-blogs_top h5 {
+    font-family: var(--font-family);
+    font-size: 20px;
+    line-height: 35px;
+    font-weight: 700;
+    color: var(--header-color);
+}
+
+.id__design-blogs_top a {
+    font-family: var(--font-family);
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: var(--main-color);
+}
+
+.id__design-blogs_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 1rem 0;
+    border-top: 1px solid rgba(172, 119, 26, 1);
+}
+
+@media screen and (max-width: 550px) {
+    .id__design-blogs_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0.5rem;
+        padding: 0.5rem 1rem;
+    }
+}
